@@ -3,7 +3,7 @@ const display = document.getElementById('display');
 const buttons = document.querySelectorAll('.buttons button');
 const themeButtons = document.querySelectorAll('.theme-btn');
 const html = document.documentElement;
-
+// integration du code des calculs pour cette calculatrice
 buttons.forEach(btn => {
   btn.addEventListener('click', () => {
     const value = btn.textContent;
@@ -28,7 +28,7 @@ buttons.forEach(btn => {
     }
   });
 });
-
+//manipulation des theme existe //
 themeButtons.forEach(button => {
   button.addEventListener('click', () => {
     const theme = button.getAttribute('data-theme');
